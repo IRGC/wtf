@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -155,6 +154,10 @@
                     </div>
                     <div class="item item3 item3fix">
 
+                    <span class="price">{{calc_percentage(tick.total,total_value)}}%</span>
+
+                    <!--
+
                         <div style="text-align:center;">
                             <div class="prcfix"><span class="percent">{{calc_percentage(tick.total,total_value)}}%</span></div>
                             <div class="barfix">
@@ -162,6 +165,7 @@
                                 </div>
                             </div>
                         </div>
+                    -->
                         <!--</div>-->
 
                         <!-- <div class="rowbtn"><button v-else @click="showholdmodalfn(tick.ticker)" id="myBtn" type="submit" value="" class="btn">ADD</button></div> -->
@@ -213,7 +217,7 @@
                                 <div class="headuseritem2">{{ hold.unit_price}}</div>
                                 <div class="headuseritem3">{{ safefloat(hold.unit_price*hold.unit)}}</div>
                                 <div class="headuseritem3">{{ safefloat(tick.lp*hold.unit)}}</div>
-                                <div class="headdel"><button @click="deleteonehold(tick.id)" class="entdel"> delete </button></div>
+                                <div class="headdel"><button @click="deleteonehold(hold.id)" class="entdel"> delete </button></div>
                             </div>
 
                             <!--<div class="useritems">
