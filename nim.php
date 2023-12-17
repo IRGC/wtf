@@ -154,9 +154,9 @@
                     </div>
                     <div class="item item3 item3fix">
 
-                    <span class="price">{{calc_percentage(tick.total,total_value)}}%</span>
+                        <span class="price">{{calc_percentage(tick.total,total_value)}}%</span>
 
-                    <!--
+                        <!--
 
                         <div style="text-align:center;">
                             <div class="prcfix"><span class="percent">{{calc_percentage(tick.total,total_value)}}%</span></div>
